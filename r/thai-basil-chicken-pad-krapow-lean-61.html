@@ -1,14 +1,24 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Thai Basil Chicken (Pad Krapow, lean)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root{--ink:#1B1B19;--sec:#6b6b62;--hair:#e4e4dd;--sans:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;}
   *{box-sizing:border-box;}
   body{margin:0 auto;background:#fcfcfa;color:var(--ink);font-family:var(--sans);line-height:1.5;
        padding:26px 20px 60px;max-width:640px;}
+  .tabs{display:flex;gap:8px;margin:0 0 22px;}
+  .tab{border:1px solid var(--hair);background:#fff;color:var(--sec);font:inherit;font-size:13px;
+       padding:7px 18px;border-radius:999px;cursor:pointer;letter-spacing:.02em;}
+  .tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .pane[hidden]{display:none;}
   h1{font-size:26px;line-height:1.15;margin:0 0 6px;letter-spacing:-.01em;}
   .meta{font-size:13px;color:var(--sec);border-bottom:1px solid var(--hair);padding-bottom:16px;margin-bottom:18px;}
   h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--sec);margin:24px 0 10px;}
@@ -16,23 +26,52 @@
   ul.ing li{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px solid var(--hair);font-size:15px;}
   ul.ing li .q{color:var(--sec);white-space:nowrap;}
   ol.steps{margin:0;padding-left:22px;}
-  ol.steps li{margin:0 0 12px;font-size:15px;}
+  ol.steps li{margin:0 0 13px;font-size:15px;}
   .tips{margin-top:20px;background:#f2f2ed;padding:12px 14px;border-radius:6px;font-size:14px;color:#4a4a42;}
   footer{margin-top:34px;font-size:11px;color:#a3a399;text-align:center;}
+  .hi{font-family:"Noto Sans Devanagari","Nirmala UI",var(--sans);}
+  .hi h1{letter-spacing:0;line-height:1.3;}
+  .hi h2{letter-spacing:.1em;}
 </style>
 </head>
 <body>
+<div class="tabs" role="tablist" aria-label="Language">
+  <button class="tab" role="tab" aria-selected="true" data-lang="en">English</button>
+  <button class="tab" role="tab" aria-selected="false" data-lang="hi">हिंदी</button>
+</div>
+<section class="pane pane-en" data-pane="en">
   <h1>Thai Basil Chicken (Pad Krapow, lean)</h1>
-  <div class="meta">Serves 2 &middot; Prep 8 min &middot; Cook 10 min</div>
+  <div class="meta">Serves 2 &middot; Prep 12 min &middot; Cook 10 min</div>
   <h2>Ingredients</h2>
   <ul class="ing">
-    <li><span>chicken mince</span><span class="q">400 g</span></li><li><span>thai basil</span><span class="q">large handful</span></li><li><span>garlic</span><span class="q">3 cloves</span></li><li><span>birds eye chilli</span><span class="q">1-2</span></li><li><span>green beans</span><span class="q">100 g</span></li><li><span>soy sauce (low salt)</span><span class="q">1 tbsp</span></li><li><span>fish sauce</span><span class="q">2 tsp</span></li>
+    <li><span>chicken mince</span><span class="q">400 g</span></li><li><span>thai basil</span><span class="q">large handful</span></li><li><span>garlic</span><span class="q">4 cloves</span></li><li><span>birds eye chilli</span><span class="q">1-2</span></li><li><span>green beans</span><span class="q">100 g</span></li><li><span>shallot</span><span class="q">1</span></li><li><span>light soy sauce</span><span class="q">1 tbsp</span></li><li><span>oyster sauce</span><span class="q">1 tbsp</span></li><li><span>fish sauce</span><span class="q">2 tsp</span></li><li><span>sugar</span><span class="q">1 tsp</span></li><li><span>neutral oil</span><span class="q">1 tbsp</span></li><li><span>eggs</span><span class="q">2 (optional)</span></li>
   </ul>
   <h2>Method</h2>
-  <ol class="steps">
-    <li>Stir-fry the garlic and chilli in a little oil for 30 sec.</li><li>Add the chicken mince and brown, breaking it up.</li><li>Add green beans, soy and fish sauce; toss 2-3 min until cooked.</li><li>Off the heat, fold through the Thai basil until wilted.</li><li>Serve over rice with a fried egg if you like.</li>
-  </ol>
-  <div class="tips"><strong>Tip.</strong> Keep the heat high so it fries rather than stews.</div>
+  <ol class="steps"><li>Pound (or finely chop) 4 garlic cloves and 1-2 chillies into a coarse paste.</li><li>Trim and slice 100 g green beans and 1 shallot; pick the leaves from a large handful of thai basil.</li><li>Mix the sauce: 1 tbsp light soy, 1 tbsp oyster sauce, 2 tsp fish sauce, 1 tsp sugar and 1 tbsp water.</li><li>Heat 1 tbsp oil in a wok or wide pan over high heat until shimmering.</li><li>Add the garlic-chilli paste and shallot; stir-fry 20-30 sec until fragrant (don't brown).</li><li>Add 400 g chicken mince and stir-fry 4-5 min, breaking it up, until no longer pink.</li><li>Add the green beans and the sauce; toss 2-3 min until the beans are just tender and the pan looks glossy.</li><li>Turn off the heat and fold through the thai basil until wilted.</li><li>Serve over jasmine rice, ideally topped with a crispy fried egg.</li></ol>
+  <div class="tips"><strong>Tip.</strong> Keep the heat high the whole time so it fries rather than stews.</div>
+</section>
+<section class="pane pane-hi hi" data-pane="hi" hidden>
+  <h1>थाई बेसिल चिकन (पैड क्रापाओ)</h1>
+  <div class="meta">2 लोगों के लिए &middot; तैयारी 12 मिनट &middot; पकाना 10 मिनट</div>
+  <h2>सामग्री</h2>
+  <ul class="ing">
+    <li><span>चिकन कीमा</span><span class="q">400 ग्राम</span></li><li><span>थाई तुलसी (बेसिल)</span><span class="q">एक बड़ी मुठ्ठी</span></li><li><span>लहसुन</span><span class="q">4 कली</span></li><li><span>बर्ड्स आई मिर्च</span><span class="q">1-2</span></li><li><span>हरी बीन्स</span><span class="q">100 ग्राम</span></li><li><span>शैलट (छोटा प्याज़)</span><span class="q">1</span></li><li><span>लाइट सोया सॉस</span><span class="q">1 बड़ा चम्मच</span></li><li><span>ऑयस्टर सॉस</span><span class="q">1 बड़ा चम्मच</span></li><li><span>फिश सॉस</span><span class="q">2 छोटा चम्मच</span></li><li><span>चीनी</span><span class="q">1 छोटा चम्मच</span></li><li><span>तेल</span><span class="q">1 बड़ा चम्मच</span></li><li><span>अंडे</span><span class="q">2 (वैकल्पिक)</span></li>
+  </ul>
+  <h2>विधि</h2>
+  <ol class="steps"><li>4 कली लहसुन और 1-2 मिर्च को कूटकर (या बारीक काटकर) दरदरा पेस्ट बना लें।</li><li>100 ग्राम हरी बीन्स और 1 शैलट काट लें; एक बड़ी मुठ्ठी थाई तुलसी की पत्तियाँ अलग कर लें।</li><li>सॉस मिलाएं: 1 बड़ा चम्मच सोया, 1 बड़ा चम्मच ऑयस्टर सॉस, 2 छोटा चम्मच फिश सॉस, 1 छोटा चम्मच चीनी और 1 बड़ा चम्मच पानी।</li><li>कड़ाही में 1 बड़ा चम्मच तेल तेज़ आँच पर खूब गरम करें।</li><li>लहसुन-मिर्च का पेस्ट और शैलट डालें; 20-30 सेकंड भूनें जब तक खुशबू आए (जलाएं नहीं)।</li><li>400 ग्राम चिकन कीमा डालें और 4-5 मिनट भूनें, तोड़ते हुए, जब तक गुलाबी रंग न रहे।</li><li>हरी बीन्स और सॉस डालें; 2-3 मिनट चलाएं जब तक बीन्स हल्की नरम और पैन चमकदार हो जाए।</li><li>आँच बंद करें और थाई तुलसी मिलाएं जब तक मुरझा जाए।</li><li>चमेली चावल के साथ, ऊपर कुरकुरा तला अंडा रखकर परोसें।</li></ol>
+  <div class="tips"><strong>सुझाव.</strong> पूरे समय आँच तेज़ रखें ताकि यह उबले नहीं बल्कि भुने।</div>
+</section>
   <footer>Recipe card generated by Chef</footer>
+<script>
+  var tabs = document.querySelectorAll('.tab');
+  var panes = document.querySelectorAll('.pane');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var lang = t.getAttribute('data-lang');
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      panes.forEach(function(p){ p.hidden = (p.getAttribute('data-pane') !== lang); });
+    });
+  });
+</script>
 </body>
 </html>

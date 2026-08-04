@@ -1,14 +1,24 @@
+
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Salmon + Mango Salsa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 <style>
   :root{--ink:#1B1B19;--sec:#6b6b62;--hair:#e4e4dd;--sans:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;}
   *{box-sizing:border-box;}
   body{margin:0 auto;background:#fcfcfa;color:var(--ink);font-family:var(--sans);line-height:1.5;
        padding:26px 20px 60px;max-width:640px;}
+  .tabs{display:flex;gap:8px;margin:0 0 22px;}
+  .tab{border:1px solid var(--hair);background:#fff;color:var(--sec);font:inherit;font-size:13px;
+       padding:7px 18px;border-radius:999px;cursor:pointer;letter-spacing:.02em;}
+  .tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .pane[hidden]{display:none;}
   h1{font-size:26px;line-height:1.15;margin:0 0 6px;letter-spacing:-.01em;}
   .meta{font-size:13px;color:var(--sec);border-bottom:1px solid var(--hair);padding-bottom:16px;margin-bottom:18px;}
   h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--sec);margin:24px 0 10px;}
@@ -16,23 +26,52 @@
   ul.ing li{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px solid var(--hair);font-size:15px;}
   ul.ing li .q{color:var(--sec);white-space:nowrap;}
   ol.steps{margin:0;padding-left:22px;}
-  ol.steps li{margin:0 0 12px;font-size:15px;}
+  ol.steps li{margin:0 0 13px;font-size:15px;}
   .tips{margin-top:20px;background:#f2f2ed;padding:12px 14px;border-radius:6px;font-size:14px;color:#4a4a42;}
   footer{margin-top:34px;font-size:11px;color:#a3a399;text-align:center;}
+  .hi{font-family:"Noto Sans Devanagari","Nirmala UI",var(--sans);}
+  .hi h1{letter-spacing:0;line-height:1.3;}
+  .hi h2{letter-spacing:.1em;}
 </style>
 </head>
 <body>
+<div class="tabs" role="tablist" aria-label="Language">
+  <button class="tab" role="tab" aria-selected="true" data-lang="en">English</button>
+  <button class="tab" role="tab" aria-selected="false" data-lang="hi">हिंदी</button>
+</div>
+<section class="pane pane-en" data-pane="en">
   <h1>Salmon + Mango Salsa</h1>
-  <div class="meta">Serves 2 &middot; Prep 10 min &middot; Cook 8 min</div>
+  <div class="meta">Serves 2 &middot; Prep 15 min &middot; Cook 8 min</div>
   <h2>Ingredients</h2>
   <ul class="ing">
-    <li><span>salmon fillet</span><span class="q">2</span></li><li><span>ripe mango</span><span class="q">1</span></li><li><span>red onion</span><span class="q">1/4</span></li><li><span>lime</span><span class="q">1</span></li><li><span>jalapeno</span><span class="q">1/2</span></li><li><span>coriander</span><span class="q">small handful</span></li><li><span>olive oil</span><span class="q">1 tbsp</span></li>
+    <li><span>salmon fillet</span><span class="q">2 (skin-on)</span></li><li><span>ripe mango</span><span class="q">1</span></li><li><span>red onion</span><span class="q">1/4</span></li><li><span>lime</span><span class="q">1</span></li><li><span>jalapeno</span><span class="q">1/2</span></li><li><span>fresh coriander</span><span class="q">small handful</span></li><li><span>olive oil</span><span class="q">1 tbsp</span></li><li><span>salt & pepper</span><span class="q">to taste</span></li>
   </ul>
   <h2>Method</h2>
-  <ol class="steps">
-    <li>Dice the mango, red onion, jalapeno and coriander; toss with lime juice and a little oil.</li><li>Season the salmon and pan-sear skin-side down 3-4 min until crisp.</li><li>Flip and cook 2 min more until just done.</li><li>Top with the mango salsa.</li>
-  </ol>
-  <div class="tips"><strong>Tip.</strong> Let the salsa sit 10 min so the flavours mingle.</div>
+  <ol class="steps"><li>Take the salmon out of the fridge 15 min before cooking; pat the skin very dry and season both sides.</li><li>Dice 1 ripe mango, 1/4 red onion and 1/2 deseeded jalapeno into small even pieces.</li><li>Toss the mango, onion and chilli with chopped coriander, the juice of 1 lime and a pinch of salt; rest 10 min.</li><li>Heat 1 tbsp olive oil in a non-stick pan over medium-high heat.</li><li>Lay the salmon skin-side down and press gently for 10 sec so it stays flat.</li><li>Cook undisturbed 4-5 min until the skin is crisp and the flesh has turned opaque two-thirds up the side.</li><li>Flip and cook 1-2 min more until just cooked through.</li><li>Rest 2 min, then spoon the mango salsa generously over the top and serve.</li></ol>
+  <div class="tips"><strong>Tip.</strong> Letting the salsa sit 10 min draws the mango juices into a light dressing.</div>
+</section>
+<section class="pane pane-hi hi" data-pane="hi" hidden>
+  <h1>सैल्मन + आम का साल्सा</h1>
+  <div class="meta">2 लोगों के लिए &middot; तैयारी 15 मिनट &middot; पकाना 8 मिनट</div>
+  <h2>सामग्री</h2>
+  <ul class="ing">
+    <li><span>सैल्मन फिलेट</span><span class="q">2 (छिलके सहित)</span></li><li><span>पका आम</span><span class="q">1</span></li><li><span>लाल प्याज़</span><span class="q">चौथाई</span></li><li><span>नींबू (लाइम)</span><span class="q">1</span></li><li><span>हरी मिर्च</span><span class="q">आधी</span></li><li><span>ताज़ा धनिया</span><span class="q">थोड़ा</span></li><li><span>जैतून का तेल</span><span class="q">1 बड़ा चम्मच</span></li><li><span>नमक और काली मिर्च</span><span class="q">स्वादानुसार</span></li>
+  </ul>
+  <h2>विधि</h2>
+  <ol class="steps"><li>पकाने से 15 मिनट पहले सैल्मन फ्रिज से निकालें; छिलके को अच्छी तरह सुखाएं और दोनों तरफ नमक-काली मिर्च लगाएं।</li><li>1 पका आम, चौथाई लाल प्याज़ और आधी बीज निकली हरी मिर्च को छोटे बराबर टुकड़ों में काटें।</li><li>आम, प्याज़ और मिर्च को कटे धनिये, 1 नींबू के रस और चुटकी भर नमक के साथ मिलाएं; 10 मिनट रख दें।</li><li>एक नॉन-स्टिक पैन में 1 बड़ा चम्मच तेल मध्यम-तेज़ आँच पर गरम करें।</li><li>सैल्मन को छिलके वाली तरफ़ से नीचे रखें और 10 सेकंड हल्के से दबाएं ताकि सीधा रहे।</li><li>बिना हिलाए 4-5 मिनट पकाएं जब तक छिलका कुरकुरा हो जाए और मछली किनारों से दो-तिहाई तक पक जाए।</li><li>पलटें और 1-2 मिनट और पकाएं जब तक बीच से बस पक जाए।</li><li>2 मिनट रखें, फिर ऊपर से आम का साल्सा डालकर परोसें।</li></ol>
+  <div class="tips"><strong>सुझाव.</strong> साल्सा को 10 मिनट रखने से आम का रस निकलकर हल्की ड्रेसिंग बन जाती है।</div>
+</section>
   <footer>Recipe card generated by Chef</footer>
+<script>
+  var tabs = document.querySelectorAll('.tab');
+  var panes = document.querySelectorAll('.pane');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var lang = t.getAttribute('data-lang');
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      panes.forEach(function(p){ p.hidden = (p.getAttribute('data-pane') !== lang); });
+    });
+  });
+</script>
 </body>
 </html>
