@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tofu & Broccoli Stir-Fry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#1B1B19;--sec:#6b6b62;--hair:#e4e4dd;--sans:-apple-system,system-ui,"Segoe UI",Roboto,sans-serif;}
+  *{box-sizing:border-box;}
+  body{margin:0 auto;background:#fcfcfa;color:var(--ink);font-family:var(--sans);line-height:1.5;
+       padding:26px 20px 60px;max-width:640px;}
+  .tabs{display:flex;gap:8px;margin:0 0 22px;}
+  .tab{border:1px solid var(--hair);background:#fff;color:var(--sec);font:inherit;font-size:13px;
+       padding:7px 18px;border-radius:999px;cursor:pointer;letter-spacing:.02em;}
+  .tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink);}
+  .tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px;}
+  .pane[hidden]{display:none;}
+  h1{font-size:26px;line-height:1.15;margin:0 0 6px;letter-spacing:-.01em;}
+  .meta{font-size:13px;color:var(--sec);border-bottom:1px solid var(--hair);padding-bottom:16px;margin-bottom:18px;}
+  h2{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--sec);margin:24px 0 10px;}
+  ul.ing{list-style:none;padding:0;margin:0;}
+  ul.ing li{display:flex;justify-content:space-between;gap:14px;padding:6px 0;border-bottom:1px solid var(--hair);font-size:15px;}
+  ul.ing li .q{color:var(--sec);white-space:nowrap;}
+  ol.steps{margin:0;padding-left:22px;}
+  ol.steps li{margin:0 0 13px;font-size:15px;}
+  .tips{margin-top:20px;background:#f2f2ed;padding:12px 14px;border-radius:6px;font-size:14px;color:#4a4a42;}
+  footer{margin-top:34px;font-size:11px;color:#a3a399;text-align:center;}
+  .hi{font-family:"Noto Sans Devanagari","Nirmala UI",var(--sans);}
+  .hi h1{letter-spacing:0;line-height:1.3;}
+  .hi h2{letter-spacing:.1em;}
+</style>
+</head>
+<body>
+<div class="tabs" role="tablist" aria-label="Language">
+  <button class="tab" role="tab" aria-selected="true" data-lang="en">English</button>
+  <button class="tab" role="tab" aria-selected="false" data-lang="hi">हिंदी</button>
+</div>
+<section class="pane pane-en" data-pane="en">
+  <h1>Tofu & Broccoli Stir-Fry</h1>
+  <div class="meta">Serves 2 &middot; Prep 10 min &middot; Cook 15 min</div>
+  <h2>Ingredients</h2>
+  <ul class="ing">
+    <li><span>extra-firm tofu</span><span class="q">400 g block</span></li><li><span>broccoli florets</span><span class="q">320 g</span></li><li><span>bell pepper, sliced</span><span class="q">1</span></li><li><span>garlic, sliced</span><span class="q">2 cloves</span></li><li><span>ginger, grated</span><span class="q">1 inch</span></li><li><span>low-salt soy sauce</span><span class="q">2 tbsp</span></li><li><span>olive or neutral oil</span><span class="q">1 tbsp</span></li><li><span>toasted sesame oil</span><span class="q">1 tsp</span></li><li><span>spring onions, sliced</span><span class="q">2</span></li><li><span>chilli flakes</span><span class="q">1/2 tsp</span></li><li><span>ready-to-eat grain pouch or cooked rice (optional)</span><span class="q">250 g</span></li>
+  </ul>
+  <h2>Method</h2>
+  <ol class="steps"><li>Drain the tofu, wrap in kitchen paper and press under a weight for 5 minutes, then cut into 2 cm cubes.</li><li>Heat the oil in a wok on high. Add the tofu and leave it untouched for 2 minutes, then turn and fry 6-8 minutes in total until golden on most sides. Remove to a plate.</li><li>Add the broccoli and 3 tbsp water to the wok, cover and steam-fry for 3 minutes.</li><li>Add the pepper, garlic and ginger and stir-fry 2 minutes.</li><li>Return the tofu, add the soy sauce and chilli flakes and toss for 1 minute until glossy.</li><li>Off the heat, drizzle with sesame oil and scatter the spring onions. Serve with a microwaved grain pouch or rice.</li></ol>
+  <div class="tips"><strong>Tip.</strong> Extra-firm tofu crisps fastest and needs the least pressing. Pre-cut florets mean almost no chopping.</div>
+</section>
+<section class="pane pane-hi hi" data-pane="hi" hidden>
+  <h1>टोफ़ू और ब्रोकली स्टर-फ़्राई</h1>
+  <div class="meta">2 लोगों के लिए &middot; तैयारी 10 मिनट &middot; पकाना 15 मिनट</div>
+  <h2>सामग्री</h2>
+  <ul class="ing">
+    <li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li><li><span></span><span class="q"></span></li>
+  </ul>
+  <h2>विधि</h2>
+  <ol class="steps"><li>टोफ़ू का पानी निकालें, किचन पेपर में लपेटकर किसी भारी चीज़ से 5 मिनट दबाएँ, फिर 2 सेमी के टुकड़े काटें।</li><li>कड़ाही (वोक) में तेज़ आँच पर तेल गरम करें। टोफ़ू डालकर 2 मिनट बिना हिलाए छोड़ दें, फिर पलटते हुए कुल 6-8 मिनट सुनहरा होने तक तलें। प्लेट में निकाल लें।</li><li>वोक में ब्रोकली और 3 बड़े चम्मच पानी डालें, ढककर 3 मिनट पकाएँ।</li><li>शिमला मिर्च, लहसुन और अदरक डालकर 2 मिनट चलाते हुए भूनें।</li><li>टोफ़ू वापस डालें, सोया सॉस और चिली फ़्लेक्स डालकर 1 मिनट चमकदार होने तक मिलाएँ।</li><li>आँच बंद करके तिल का तेल डालें और हरा प्याज़ छिड़कें। माइक्रोवेव किए अनाज पाउच या चावल के साथ परोसें।</li></ol>
+  <div class="tips"><strong>सुझाव.</strong> एक्स्ट्रा-फ़र्म टोफ़ू सबसे जल्दी कुरकुरा होता है और कम दबाना पड़ता है। पहले से कटे ब्रोकली के फूल से लगभग कुछ नहीं काटना पड़ता।</div>
+</section>
+  <footer>Recipe card generated by Chef</footer>
+<script>
+  var tabs = document.querySelectorAll('.tab');
+  var panes = document.querySelectorAll('.pane');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var lang = t.getAttribute('data-lang');
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      panes.forEach(function(p){ p.hidden = (p.getAttribute('data-pane') !== lang); });
+    });
+  });
+</script>
+</body>
+</html>
